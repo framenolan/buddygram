@@ -14,14 +14,19 @@
     {{!--  nav: login, signup, about us --}}
     <header>
     <nav>
+        <div class="nav-wrapper grey-darken-4">
+                  <a href="#" class="logo">BuddyGram</a>
         {{#if logged_in}}
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">Login</a>
-        <a href="/">Sign Up</a>
-        <a href="/">About Us</a>
+         <ul id="nav-mobile" class="right">
+        <li><a href="/login">Login</a></li>
+        <li><a href="/">Sign Up</a></li>
+        <li> <a href="/">About Us</a></li>
+        </ul>
         {{/if}}
+        </div>
     </nav>
     </header>
 
