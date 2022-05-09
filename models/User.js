@@ -21,8 +21,7 @@ User.init(
       allowNull: false,
     },
     location: {
-        // Use as a string/dropdown to start?
-        type: DataTypes.GEOGRAPHY,
+        type: DataTypes.STRING,
     },
     email: {
       type: DataTypes.STRING,

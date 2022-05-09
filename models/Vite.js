@@ -4,7 +4,6 @@ const sequelize = require('../config/connection');
 class Vite extends Model {}
 
 Vite.init({
-    // add properites here, ex:
     location: {
          type: DataTypes.STRING,
          allowNull:false

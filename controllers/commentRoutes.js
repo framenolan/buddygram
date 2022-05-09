@@ -1,6 +1,4 @@
 const express = require("express");
-const { BelongsTo } = require("sequelize/types");
-const { default: ModelManager } = require("sequelize/types/model-manager");
 const router = express.Router();
 const {User, Vite, Comment} = require("../models");
 
