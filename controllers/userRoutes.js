@@ -58,6 +58,7 @@ router.post("/login", (req, res) => {
       email:req.body.email
     }
   }).then(foundUser=>{
+      console.log(foundUser)
       if(!foundUser){
         return res.status(400).json({msg:"wrong login credentials"})
       }
