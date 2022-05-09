@@ -4,7 +4,9 @@ const {User, Vite, Comment} = require("../models");
 
 //find all
 router.get("/", (req, res) => {
-    Comment.findAll({})
+    Comment.findAll({
+      include:[User, Vite]
+    })
       .then(dbComments => {
         res.json(dbComments);
       })

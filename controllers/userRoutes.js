@@ -41,7 +41,7 @@ router.post("/", (req, res) => {
       .then(newUser => {
         req.session.user = {
           id:newUser.id,
-          username:newUser.username
+          email:newUser.email
         }
         res.json(newUser);
       })
@@ -55,7 +55,7 @@ router.post("/", (req, res) => {
 router.post("/login", (req, res) => {
     User.findOne({
       where:{
-      username:req.body.username
+      email:req.body.email
     }
   }).then(foundUser=>{
       if(!foundUser){
@@ -64,7 +64,7 @@ router.post("/login", (req, res) => {
       if(bcrypt.compareSync(req.body.password,foundUser.password)){
         req.session.user = {
           id:foundUser.id,
-          username:foundUser.username
+          email:foundUser.email
         }
         return res.json(foundUser)
       } else {

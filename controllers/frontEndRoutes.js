@@ -13,9 +13,10 @@ router.get("/", (req, res) => {
         const hbsVites = allVites.map(vite => vite.get({plain: true}));
         console.log(hbsVites)
         const loggedIn = req.session.user?true:false;
-        res.render(
-            // TODO: render the explore feed here
-        )
+        console.log("loggedIn = ", loggedIn)
+        // res.render(
+        //     // TODO: render the explore feed here
+        // )
     })
 })
 
