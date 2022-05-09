@@ -1,0 +1,22 @@
+[
+    {
+      "firstname": "Nolan",
+      "lastname": "Frame",
+      "email": "frame.nolan@gmail.com",
+      "location": "Seattle",
+      "password": "password12345"
+    },
+    {
+      "firstname": "Scooby",
+      "lastname": "Doo",
+      "email": "ruhroh@example.com",
+      "password": "password12345"
+    },
+    {
+      "firstname": "Tester",
+      "email": "test@test.com",
+      "password": "password12345",
+      "location": "Seattle"
+    }
+]
+  
