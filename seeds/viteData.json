@@ -1,0 +1,21 @@
+[
+    {
+      "where": "Madison Park Beach",
+      "when": "05/15/2022 5:00pm",
+      "what": "Hang out with me at the beach!",
+      "capacity": 10
+    },
+    {
+        "where": "Golden Gardens Beach",
+        "when": "05/16/2022 5:00pm",
+        "what": "Hang out with me at this other beach!",
+        "capacity": 15
+    },
+    {
+        "where": "Poquitos",
+        "when": "05/17/2022 5:00pm",
+        "what": "Grab some margs",
+        "capacity": 5
+    }
+]
+  
