@@ -7,10 +7,6 @@ Comment.init({
     body: {
         type:DataTypes.TEXT,
         allowNull:false
-    },
-    postedTime: {
-        type: 'TIMESTAMP',
-        defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
     }
 },{
     sequelize
