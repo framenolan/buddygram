@@ -1,19 +1,22 @@
 [
     {
-      "name": "Nolan",
-      "email": "frame.nolan@gmailcom",
+      "firstname": "Nolan",
+      "lastname": "Frame",
+      "email": "frame.nolan@gmail.com",
       "location": "Seattle",
       "password": "password12345"
     },
     {
-      "name": "Scooby",
+      "firstname": "Scooby",
+      "lastname": "Doo",
       "email": "ruhroh@example.com",
       "password": "password12345"
     },
     {
-      "name": "Tester",
+      "firstname": "Tester",
       "email": "test@test.com",
-      "password": "password12345"
+      "password": "password12345",
+      "location": "Seattle"
     }
 ]
   

@@ -3,7 +3,7 @@ const { User, Vite, Comment } = require('../models');
 
 const userData = require('./userData.json');
 const viteData = require('./viteData.json');
-// const commentData = require('./commentData.json');
+const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -20,9 +20,7 @@ const seedDatabase = async () => {
     });
   }
 
-//   const comments = await Comment.bulkCreate(commentData, {
-//       
-//   });
+  const comments = await Comment.bulkCreate(commentData);
 
   process.exit(0);
 };

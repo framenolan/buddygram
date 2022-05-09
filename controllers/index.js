@@ -14,15 +14,16 @@ const frontEnd = require('./frontEndRoutes');
 router.use('/', frontEnd);
 
 
-router.get("/showsessions",(req,res)=>{
+router.get("/showsession", (req, res) => {
+    console.log(req.session.user)
     res.json(req.session)
 })
 
-router.get("/loggedin",(req,res)=>{
+router.get("/loggedin", (req, res) => {
     if(!req.session.user){
         return res.status(401).json({msg:"ya gotta login to join the club!"})
     }
-    res.json({msg:`welcome to the club ${req.session.user.username}`})
+    res.json({msg:`welcome to the club ${req.session.user.firstname}`})
 })
 
 

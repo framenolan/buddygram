@@ -6,7 +6,7 @@ User.hasMany(Vite);
 Vite.belongsTo(User);
 
 Vite.hasMany(Comment);
-Comment.belongsTo(User);
+Comment.belongsTo(Vite);
 
 User.hasMany(Comment);
 Comment.belongsTo(User);
