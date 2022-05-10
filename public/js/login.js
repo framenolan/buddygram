@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // const slider = document.querySelector('.carousel');
 // M.Slider.init(slider, {
 //   indicators: false,
@@ -6,7 +5,7 @@
 //   transition: 500,
 //   interval: 6000
 // });
-=======
+
 document.querySelector("#btn_login").addEventListener("submit",e=>{
     e.preventDefault();
     const userObj = {
@@ -28,5 +27,3 @@ document.querySelector("#btn_login").addEventListener("submit",e=>{
         }
     })
 })
-
->>>>>>> dev
