@@ -1,4 +1,4 @@
-document.querySelector("#btn_signup").addEventListener("submit",e=>{
+document.querySelector("#btnSignup").addEventListener("click",e=>{
     e.preventDefault();
 
     const userObj = {
