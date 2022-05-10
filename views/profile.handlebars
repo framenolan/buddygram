@@ -1,17 +1,19 @@
 <h1>Welcome back {{username}}</h1>
 <h2>All your vites:</h2>
-<form action="" id="newVite">
+<form id="newVite">
     <input type="text" id="what" placeholder="WHAT?">
     <input type="text" id="place" placeholder="WHERE?">
-    <input type="text" id="when" placeholder="WHEN?">
+    <input type="date" id="date" placeholder="DATE?">
+    <input type="time" id="time" placeholder="TIME?">
+    <input type="text" id="capacity" placeholder="HOW MANY PEOPLE?">
     <textarea id="body" cols="30" rows="10"></textarea>
-    <button>Upload your vite photo</button>
-    <button>Post</button>
+    <button id="vitePhoto">Upload your Vite photo</button>
+    <button id="postVite">Post</button>
 </form>
 <h2>UPCOMING VITES</h2>
 {{#each Vite}}
     <h3>{{location}}</h3>
-    <p>{{time}}</p>
+    <p>{{details}}</p>
     <button>delete</button>
     <hr>
 {{/each}}

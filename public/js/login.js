@@ -6,7 +6,7 @@ M.Slider.init(slider, {
   interval: 6000
 });
 
-document.querySelector("#btn_login").addEventListener("submit",e=>{
+document.querySelector("#btnLogin").addEventListener("click",e=>{
     e.preventDefault();
     const userObj = {
         email:document.querySelector("#email").value,

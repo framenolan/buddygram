@@ -29,15 +29,17 @@ router.get("/:id", (req, res) => {
 // create Vite
 router.post("/", (req, res) => {
   if (!req.session.user) {
-    return res.status(401).json({ msg: "Please login to view" })
-    // maybe add a redirect to login, or switch
+    return res.redirect("./login")
+    // return res.status(401).json({ msg: "Please login to view" })
   }
 
   Vite.create({
     location: req.body.location,
+    date: req.body.date,
     time: req.body.time,
     details: req.body.details,
-    capacity: req.body.capacity
+    capacity: req.body.capacity,
+    user:req.session.user.id
   })
     .then(newVite => {
       res.json(newVite)
