@@ -20,10 +20,10 @@ router.get("/showsession", (req, res) => {
 })
 
 router.get("/loggedin", (req, res) => {
-    if(!req.session.user){
-        return res.status(401).json({msg:"ya gotta login to join the club!"})
+    if (!req.session.user) {
+        return res.status(401).json({ msg: "Login to join the club!" })
     }
-    res.json({msg:`welcome to the club ${req.session.user.firstname}`})
+    res.json({ msg: `Welcome to the club ${req.session.user.firstname}` })
 })
 
 
