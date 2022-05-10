@@ -1,20 +1,16 @@
-<<<<<<< HEAD
-// const slider = document.querySelector('.carousel');
-// M.Slider.init(slider, {
-//   indicators: false,
-//   height: 500,
-//   transition: 500,
-//   interval: 6000
-// });
-=======
-document.querySelector("#btn_login").addEventListener("submit",e=>{
+document.querySelector("#btn_signup").addEventListener("submit",e=>{
     e.preventDefault();
+
     const userObj = {
+        firstname:document.querySelector("#first_name").value,
+        lastname:document.querySelector("#last_name").value,
         email:document.querySelector("#email").value,
         password:document.querySelector("#password").value,
     }
+
     console.log(userObj)
-    fetch("/api/users/login",{
+    
+    fetch("/api/users/",{
         method:"POST",
         body:JSON.stringify(userObj),
         headers:{
@@ -28,5 +24,3 @@ document.querySelector("#btn_login").addEventListener("submit",e=>{
         }
     })
 })
-
->>>>>>> dev
