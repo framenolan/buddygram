@@ -26,12 +26,19 @@ body {
   nav {
     background-color: black;
   }
-  
+  .slider{
+  height: 100vh;
+  }
+
+  .slides{
+    height:100%;
+  }
   .slider .slides li img {
     height: 100%;
     width: 100%;
     background-size:cover;
 }
+
 
 #img-2 {
   background-position: 0 20%;
@@ -43,9 +50,14 @@ body {
 
 .buddyForm{
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 20%;
   transform: translate(-50%, -50%);
   z-index: 9999;
 
+}
+
+.section{
+  padding-top: 0;
+  padding-bottom: 0;
 }
