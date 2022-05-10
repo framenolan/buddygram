@@ -22,3 +22,8 @@ body {
     border-bottom: 2px solid #E91E63;
     box-shadow: none;
   }
+
+  nav {
+    background-color: black;
+  }
+  
