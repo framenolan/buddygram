@@ -1,10 +1,10 @@
-// const slider = document.querySelector('.carousel');
-// M.Slider.init(slider, {
-//   indicators: false,
-//   height: 500,
-//   transition: 500,
-//   interval: 6000
-// });
+const slider = document.querySelector('.slider');
+M.Slider.init(slider, {
+  indicators: false,
+  height: 500,
+  transition: 500,
+  interval: 6000
+});
 
 document.querySelector("#btnLogin").addEventListener("click",e=>{
     e.preventDefault();
@@ -27,3 +27,4 @@ document.querySelector("#btnLogin").addEventListener("click",e=>{
         }
     })
 })
+
