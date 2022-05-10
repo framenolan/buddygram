@@ -10,24 +10,28 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    {{!-- App name, logo, --}}
     {{!--  nav: login, signup, about us --}}
     <header>
     <nav>
+        <div class="nav-wrapper grey-darken-4">
+    {{!-- App name/logo --}}
+        <a href="#" class="logo">BuddyGram</a>
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile">Profile</a> |
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">Login</a>
-        <a href="/">Sign Up</a>
-        <a href="/">About Us</a>
+        <ul id="nav-mobile" class="right">
+        <li><a href="/login">Login</a></li>
+        <li><a href="/">Sign Up</a></li>
+        <li> <a href="/">About Us</a></li>
+        </ul>
         {{/if}}
+        </div>
     </nav>
     </header>
 
     {{!-- page content --}}
     <main>{{{body}}}</main>
-
 
     {{!-- Script for logged in users --}}
       {{#if logged_in}}
