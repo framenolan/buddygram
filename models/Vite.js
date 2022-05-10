@@ -8,8 +8,12 @@ Vite.init({
          type: DataTypes.STRING,
          allowNull:false
     },
+    date: {
+        type: DataTypes.DATEONLY,
+        allowNull:false
+    },
     time: {
-        type: DataTypes.DATE,
+        type: DataTypes.TIME,
         allowNull:false
     },
     details: {
