@@ -1,0 +1,19 @@
+<h1>Welcome back {{username}}</h1>
+<h2>All your vites:</h2>
+<form action="" id="newVite">
+    <input type="text" id="title" placeholder="WHAT?">
+    <input type="text" id="title" placeholder="WHERE?">
+    <input type="text" id="title" placeholder="WHEN?">
+    <textarea id="body" cols="30" rows="10"></textarea>
+    <button>Upload your vite photo</button>
+    <button>Post</button>
+</form>
+<h2>UPCOMING VITES</h2>
+{{#each Vite}}
+    <h3>{{title}}</h3>
+    <p>{{body}}</p>
+    <button>delete</button>
+    <hr>
+{{/each}}
+
+<script src="/js/profile.js"></script>
