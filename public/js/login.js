@@ -1,4 +1,4 @@
-document.querySelector("#btn_login").addEventListener("submit",e=>{
+document.querySelector("#btn-login").addEventListener("click",e=>{
     e.preventDefault();
     const userObj = {
         email:document.querySelector("#email").value,

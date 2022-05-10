@@ -34,7 +34,7 @@ router.get("/login", (req, res) => {
 
 // Signup
 router.get("/signup", (req, res) => {
-    
+    res.render("signup")
 })
 
 // Logout User
