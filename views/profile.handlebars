@@ -1,5 +1,5 @@
-<h1>Welcome back {{username}}</h1>
-<h2>All your vites:</h2>
+<h1>Your Vites {{username}}</h1>
+<h3>Post a new Vite:</h3>
 <form id="newVite">
     <input type="text" id="what" placeholder="WHAT?">
     <input type="text" id="place" placeholder="WHERE?">
@@ -10,11 +10,13 @@
     <button id="vitePhoto">Upload your Vite photo</button>
     <button id="postVite">Post</button>
 </form>
-<h2>UPCOMING VITES</h2>
-{{#each Vite}}
+<h3>Upcoming Vites</h3>
+{{#each Vites}}
     <h3>{{location}}</h3>
-    <p>{{details}}</p>
-    <button>delete</button>
+    <p>Date: {{date}}</p>
+    <p>Time: {{time}}</p>
+    <p>Details: {{details}}</p>
+    <p>Capacity: {{capacity}}</p>
     <hr>
 {{/each}}
 
