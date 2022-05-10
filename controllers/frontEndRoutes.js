@@ -33,6 +33,9 @@ router.get("/login", (req, res) => {
 
 // Signup
 router.get("/signup", (req, res) => {
+    if (req.session.user) {
+        return res.redirect("/profile")
+    }
     res.render("signup")
 })
 
@@ -45,11 +48,9 @@ router.get("/logout", (req, res) => {
 
 
 // About Us
-// router.get("/aboutus", (req, res) => {
-//     req.session.destroy();
-//     res.redirect("/");
-//     location.reload();
-// })
+router.get("/aboutus", (req, res) => {
+    res.render("aboutus");
+})
 
 
 // Profile Page
