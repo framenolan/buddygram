@@ -10,7 +10,7 @@ document.querySelector("#btnSignup").addEventListener("click",e=>{
 
     console.log(userObj)
     
-    fetch("/api/users/",{
+    fetch("/api/users",{
         method:"POST",
         body:JSON.stringify(userObj),
         headers:{

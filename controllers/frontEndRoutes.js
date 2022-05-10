@@ -58,11 +58,13 @@ router.get("/profile", (req, res) => {
     if (!req.session.user) {
         return res.redirect("/login")
     }
+    
     User.findByPk(req.session.user.id, {
         include: [Vite]
     }).then(userData => {
         const hbsData = userData.get({ plain: true })
         hbsData.loggedIn = req.session.user ? true : false
+        console.log(hbsData)
         res.render("profile", hbsData)
     }).catch(err => {
         console.log(err);

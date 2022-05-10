@@ -1,7 +1,7 @@
 document.querySelector("#postVite").addEventListener("click",e=>{
     e.preventDefault()
     
-    const viteObj = {
+    let viteObj = {
         location:document.querySelector("#place").value,
         date:document.querySelector("#date").value,
         time:document.querySelector("#time").value,
@@ -22,18 +22,5 @@ document.querySelector("#postVite").addEventListener("click",e=>{
             res.status(500).json({msg: "an error occurred"})
         }
     })
-})
-
-fetch("/api/vites/",{
-    method:"GET",
-    body:JSON.stringify(viteObj),
-    headers:{
-        "Content-Type":"application/json"
-    }
-}).then(res=>{
-    if(res.ok){
-       location.reload()
-    } else {
-        res.status(500).json({msg: "an error occurred"})
-    }
+    
 })

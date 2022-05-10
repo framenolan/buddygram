@@ -18,12 +18,16 @@
     <nav>
         <div class="nav-wrapper">
     {{!-- App name/logo --}}
-        <a href="#" class="logo">BuddyGram</a>
+        <a href="/" class="logo">BuddyGram</a>
         <img src="/images/BuddyGram.JPG"> 
     {{!-- Nav bar links when a user is logged in --}}
-        {{#if logged_in}}
-        <a href="/profile">Profile</a> |
-        <button class="no-button" id="logout">Logout</button>
+        {{#if loggedIn}}
+        <ul id="nav-mobile" class="right">
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <li> <a href="/aboutus">About Us</a></li>
+        </ul>
+        {{!-- <button class="no-button" id="logout">Logout</button> --}}
     {{!-- What a user will see in the nav if they are not logged in--}}
         {{else}}
         <ul id="nav-mobile" class="right">
@@ -40,7 +44,7 @@
     <main>{{{body}}}</main>
 
     {{!-- Script for logged in users --}}
-      {{#if logged_in}}
+      {{#if loggedIn}}
   <script src="/js/logout.js"></script>
       {{/if}}
 

@@ -20,6 +20,7 @@ document.querySelector("#btnLogin").addEventListener("click",e=>{
             "Content-Type":"application/json"
         }
     }).then(res=>{
+        console.log(userObj)
         if(res.ok){
             location.href="/profile"
         } else {
