@@ -11,12 +11,11 @@ router.get("/", (req, res) => {
     Vite.findAll()
         .then(allVites => {
             const hbsVites = allVites.map(vite => vite.get({ plain: true }));
+            // TODO: remove console logs
             console.log(hbsVites)
             const loggedIn = req.session.user ? true : false;
             console.log("loggedIn = ", loggedIn)
-            // res.render(
-            //     // TODO: render the explore feed here
-            // )
+            res.render("explore")
         })
         .catch(err => {
             console.log(err);
@@ -46,11 +45,11 @@ router.get("/logout", (req, res) => {
 
 
 // About Us
-router.get("/aboutus", (req, res) => {
-    req.session.destroy();
-    res.redirect("/");
-    location.reload();
-})
+// router.get("/aboutus", (req, res) => {
+//     req.session.destroy();
+//     res.redirect("/");
+//     location.reload();
+// })
 
 
 // Profile Page
