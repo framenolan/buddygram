@@ -26,6 +26,16 @@ body {
   nav {
     background-color: black;
   }
+
+/* App name and logo styling */
+.nav-wrapper h4 {
+  font-family: 'Rancho', cursive;
+  font-size: 50px;
+  display: inline;
+  margin: 1rem;
+}
+
+/* slider styling */
   .slider{
   height: 100vh;
   }
@@ -39,7 +49,6 @@ body {
     background-size:cover;
 }
 
-
 #img-2 {
   background-position: 0 20%;
 }
@@ -48,9 +57,10 @@ body {
   background-position: 0 75%;  
 }
 
+/* sign in form */
 .buddyForm{
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 20%;
   transform: translate(-50%, -50%);
   z-index: 9999;
