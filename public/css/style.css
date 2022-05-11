@@ -35,6 +35,18 @@ body {
   margin: 1rem;
 }
 
+/* sign up form */
+#signup {
+  position: relative;
+  top: 50%;
+  left: 40%;
+}
+
+#signupheader {
+  text-align: center;
+  font-family: 'Rancho', cursive;
+}
+
 /* slider styling */
   .slider{
   height: 100vh;
