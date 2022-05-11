@@ -49,6 +49,7 @@ router.get("/logout", (req, res) => {
 
 // About Us
 router.get("/aboutus", (req, res) => {
+    
     res.render("aboutus");
 })
 

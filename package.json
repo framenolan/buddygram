@@ -21,12 +21,14 @@
   "homepage": "https://github.com/framenolan/buddygram#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cloudinary": "^1.29.1",
     "connect-session-sequelize": "^7.1.3",
     "dotenv": "^16.0.0",
     "express": "^4.18.1",
     "express-handlebars": "^6.0.5",
     "express-session": "^1.17.2",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
     "sequelize": "^6.19.0"
   }
 }
