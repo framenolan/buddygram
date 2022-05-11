@@ -10,10 +10,11 @@ router.get("/", (req, res) => {
 
     Vite.findAll()
         .then(allVites => {
+            console.log(allVites)
             const hbsVites = allVites.map(vite => vite.get({ plain: true }));
             // TODO: remove console logs
-            console.log(hbsVites)
             hbsVites.loggedIn = req.session.user ? true : false;
+            console.log(hbsVites)
             res.render("explore", hbsVites)
         })
         .catch(err => {
@@ -48,8 +49,9 @@ router.get("/logout", (req, res) => {
 
 // About Us
 router.get("/aboutus", (req, res) => {
-    
-    res.render("aboutus");
+    const hbsLoggedIn = req.session
+    hbsLoggedIn.loggedIn = req.session.user ? true : false;
+    res.render("aboutus", hbsLoggedIn);
 })
 
 
@@ -62,6 +64,7 @@ router.get("/profile", (req, res) => {
     User.findByPk(req.session.user.id, {
         include: [Vite]
     }).then(userData => {
+        console.log(userData)
         const hbsData = userData.get({ plain: true })
         hbsData.loggedIn = req.session.user ? true : false
         console.log(hbsData)
