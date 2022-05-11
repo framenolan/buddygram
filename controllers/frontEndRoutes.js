@@ -3,14 +3,14 @@ const router = express.Router();
 const { User, Vite, Comment } = require('../models');
 
 // Explore Vites
-router.get("/", (req, res) => {
+router.get("/explore", (req, res) => {
     if (!req.session.user) {
         return res.redirect("/login")
     }
 
     Vite.findAll()
         .then(allVites => {
-            const hbsVites = allVites.map(vite => vite.get({ plain: true }));
+            const hbsVites = allVites.map(Vites => Vites.get({ plain: true }));
             // TODO: remove console logs
             console.log(hbsVites)
             const loggedIn = req.session.user ? true : false;
@@ -42,7 +42,7 @@ router.get("/signup", (req, res) => {
 // Logout User
 router.get("/logout", (req, res) => {
     req.session.destroy();
-    res.redirect("/");
+    res.redirect("/login");
     location.reload();
 })
 
