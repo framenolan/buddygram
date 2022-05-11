@@ -21,10 +21,9 @@ Vite.init({
         allowNull:false
     },
     capacity: {
-        type: DataTypes.INTEGER
-    }
+        type: DataTypes.INTEGER,
+    },
 },{
     sequelize
 });
-
 module.exports=Vite

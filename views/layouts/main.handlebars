@@ -29,7 +29,8 @@
         <ul id="nav-mobile" class="right">
             <li><a href="/profile">Profile</a></li>
             <li><a href="/logout">Logout</a></li>
-            <li> <a href="/aboutus">About Us</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/">Explore</a></li>
         </ul>
         {{!-- <button class="no-button" id="logout">Logout</button> --}}
     {{!-- What a user will see in the nav if they are not logged in--}}
@@ -48,9 +49,6 @@
    {{{body}}}
 
     {{!-- Script for logged in users --}}
-      {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-      {{/if}}
 
     {{!-- linking jquery --}}
         
