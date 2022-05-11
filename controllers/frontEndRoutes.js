@@ -7,14 +7,14 @@ router.get("/", (req, res) => {
     if (!req.session.user) {
         return res.redirect("/login")
     }
+
     Vite.findAll()
         .then(allVites => {
-            const hbsVites = allVites.map(Vites => Vites.get({ plain: true }));
+            const hbsVites = allVites.map(vite => vite.get({ plain: true }));
             // TODO: remove console logs
             console.log(hbsVites)
-            const loggedIn = req.session.user ? true : false;
-            console.log("loggedIn = ", loggedIn)
-            res.render("explore")
+            hbsVites.loggedIn = req.session.user ? true : false;
+            res.render("explore", hbsVites)
         })
         .catch(err => {
             console.log(err);
