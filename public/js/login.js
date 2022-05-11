@@ -24,7 +24,7 @@ document.querySelector("#btnLogin").addEventListener("click",e=>{
         if(res.ok){
             location.href="/profile"
         } else {
-            res.status(500).json({msg: "an error occurred"})
+            res.alert("an error occurred")
         }
     })
 })
