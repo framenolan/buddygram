@@ -7,7 +7,6 @@ router.get("/", (req, res) => {
     if (!req.session.user) {
         return res.redirect("/login")
     }
-
     Vite.findAll()
         .then(allVites => {
             const hbsVites = allVites.map(Vites => Vites.get({ plain: true }));
