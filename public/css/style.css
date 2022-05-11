@@ -60,7 +60,7 @@ body {
 /* sign in form */
 .buddyForm{
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 20%;
   transform: translate(-50%, -50%);
   z-index: 9999;
