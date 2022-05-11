@@ -3,7 +3,7 @@ const router = express.Router();
 const { User, Vite, Comment } = require('../models');
 
 // Explore Vites
-router.get("/explore", (req, res) => {
+router.get("/", (req, res) => {
     if (!req.session.user) {
         return res.redirect("/login")
     }
