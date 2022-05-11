@@ -11,15 +11,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {{!-- font and icons --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Architects+Daughter&family=Rancho&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
     {{!--  nav-bar(s)--}}
     <header>
     <nav>
         <div class="nav-wrapper">
-    {{!-- App name/logo --}}
-        <a href="/" class="logo">BuddyGram</a>
-        <img src="/images/image.png"> 
+    {{!-- App name/logo here--}}
+        <h4>BuddyGram</h4>
     {{!-- Nav bar links when a user is logged in --}}
         {{#if loggedIn}}
         <ul id="nav-mobile" class="right">
@@ -41,7 +44,7 @@
     </header>
 
     {{!-- page content --}}
-    <main>{{{body}}}</main>
+   {{{body}}}
 
     {{!-- Script for logged in users --}}
       {{#if loggedIn}}

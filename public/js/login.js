@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider');
 M.Slider.init(slider, {
   indicators: false,
-  height: 500,
+  height: window.innerHeight,
   transition: 500,
   interval: 6000
 });
