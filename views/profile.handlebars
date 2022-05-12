@@ -1,17 +1,4 @@
 <h1>Your Vites {{username}}</h1>
-
-{{!-- <h3>Post a new Vite:</h3> --}}
-{{!-- <form id="newVite">
-    <input type="text" id="what" placeholder="WHAT?">
-    <input type="text" id="place" placeholder="WHERE?">
-    <input type="date" id="date" placeholder="DATE?">
-    <input type="time" id="time" placeholder="TIME?">
-    <input type="text" id="capacity" placeholder="HOW MANY PEOPLE?">
-    <textarea id="body" cols="30" rows="10"></textarea>
-    <button id="vitePhoto">Upload your Vite photo</button>
-    <button id="postVite">Post</button>
-</form> --}}
-
   <div class="container newVite">
     <div class="row">
       <div class="col s12 m7">
@@ -55,12 +42,6 @@
                 <label for="capacity">How Many People?</label>
               </div>
             </div>
-            {{!-- <p class="right custom_terms">
-              <label>
-                                  <input type="checkbox" />
-                                  <span>Agree to T & Cs</span>
-                                </label>
-            </p> --}}
             <div class="row">
               <div class="col s12 right-align">
                 <button data-target="modal1" id="vitePhoto" class="btn blue-grey waves-effect waves-light modal-trigger">Upload Your Vite Photo<i class="material-icons right"></i></button>
@@ -75,24 +56,15 @@
         <div id="aboutus" class="center-align about_us scrollspy">
 
 <h3><strong>Upcoming Vites</strong></h3>
-<div class="container">
-  <div class="row">
+
     {{#each Vites}}
-    {{!-- <h3>{{location}}</h3>
-    <p>Date: {{date}}</p>
-    <p>Time: {{time}}</p>
-    <p>Details: {{details}}</p>
-    <p>Capacity: {{capacity}}</p>
-    <img src="{{imageURL}}" class="viteImg">
-    <hr> --}}
-    <div class="col s12 m6 l4">
+      {{#if imageURL}}
       <div class="card">
         <div class="card-image">
-          <img src="{{imageURL}}" alt="" class="viteImg">
-          {{!-- <img src="https://picsum.photos/200?greyscale/1" alt=""> --}}
-          <span class="card-title">{{location}}</span>
+          <img src="{{imageURL}}" alt="" class="profileViteImg">
         </div>
         <div class="card-content">
+          <p class="card-title">{{location}}</p>
           <p>Date: {{date}}</p>
           <p>Time: {{time}}</p>
           <p>Vite Details: {{details}}</p>
@@ -103,10 +75,23 @@
           <button class="light-blue-text text-darken-1 modal-trigger">View comments</button>
         </div>
       </div>
-    </div>
+      {{else}}
+      <div class="card">
+        <div class="card-content">
+          <p class="card-title">{{location}}</p>
+          <p>Date: {{date}}</p>
+          <p>Time: {{time}}</p>
+          <p>Vite Details: {{details}}</p>
+          <p>Max Capacity: {{capacity}}</p>
+        </div>
+        <div class="card-action">
+          <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
+          <button class="light-blue-text text-darken-1 modal-trigger">View comments</button>
+        </div>
+      </div>
+      {{/if}}
     {{/each}}
-  </div>
-</div>
+
 
 <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript">  
 </script>

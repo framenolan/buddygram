@@ -17,13 +17,8 @@ router.get("/", (req, res) => {
         }
     })
         .then(allVites => {
-            // console.log(allVites)
             const hbsVites = allVites.map(vite => vite.get({ plain: true }));
-            // TODO: remove console logs
             hbsVites.loggedIn = req.session.user ? true : false;
-            // console.log(hbsVites)
-            // console.log("========")
-            // console.log(hbsVites.length)
             res.render("explore", hbsVites)
         })
         .catch(err => {

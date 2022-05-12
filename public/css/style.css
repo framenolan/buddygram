@@ -2,26 +2,26 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
-  main {
-    flex: 1 0 auto;
-  }
-  body {
-    background: #fff;
-  }
-  .input-field input[type=date]:focus + label,
-  .input-field input[type=text]:focus + label,
-  .input-field input[type=email]:focus + label,
-  .input-field input[type=password]:focus + label {
-    color: #E91E63;
-  }
-  .input-field input[type=date]:focus,
-  .input-field input[type=text]:focus,
-  .input-field input[type=email]:focus,
-  .input-field input[type=password]:focus {
-    border-bottom: 2px solid #E91E63;
-    box-shadow: none;
-  }
+}
+main {
+  flex: 1 0 auto;
+}
+body {
+  background: #fff;
+}
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+  color: #E91E63;
+}
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 2px solid #E91E63;
+  box-shadow: none;
+}
 
 nav {
     background-color: black;
@@ -62,17 +62,17 @@ nav {
 }
 
 /* slider styling */
-  .slider{
-  height: 100vh;
-  }
+.slider{
+height: 100vh;
+}
 
-  .slides{
-    height:100%;
-  }
-  .slider .slides li img {
-    height: 100%;
-    width: 100%;
-    background-size:cover;
+.slides{
+  height:100%;
+}
+.slider .slides li img {
+  height: 100%;
+  width: 100%;
+  background-size:cover;
 }
 
 .slider h1, h4 {
@@ -130,6 +130,15 @@ h1 {
 .viteImg {
   max-width: 404.16px;
   max-height: 404.16px;
+}
+
+.profileViteImg {
+  width: 100%;
+  /* max-height: 404.16px; */
+}
+
+.width100 {
+  width: 100%;
 }
 
 /* media queries */

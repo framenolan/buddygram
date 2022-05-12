@@ -34,7 +34,6 @@ var widget = cloudinary.createUploadWidget(
         upload_preset: 'pbpzv69s',
         sources: ['local', 'url', 'camera', 'image_search',
             'facebook', 'dropbox', 'google_photos'],
-        //google_api_key: ''.....'' 
     },
     (error, result) => {
         if (!error && result && result.event === "success") {
