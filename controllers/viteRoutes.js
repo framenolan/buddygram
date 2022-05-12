@@ -39,7 +39,8 @@ router.post("/", (req, res) => {
     time: req.body.time,
     details: req.body.details,
     capacity: req.body.capacity,
-    userId:req.session.user.id
+    userId:req.session.user.id,
+    imageURL: req.body.imageURL
   })
     .then(newVite => {
       res.json(newVite)
