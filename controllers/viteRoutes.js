@@ -30,7 +30,6 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   if (!req.session.user) {
     return res.redirect("./login")
-    // return res.status(401).json({ msg: "Please login to view" })
   }
 
   Vite.create({
