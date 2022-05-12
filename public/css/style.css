@@ -132,3 +132,35 @@ h1 {
        top: -40px;
    }
 }
+
+.about{
+  background-image: url("https://d207ibygpg2z1x.cloudfront.net/image/upload/dpr_1,q_auto:eco/v1/articles_upload/main/ipvrtkw2lbymh5ibicvb");
+  background-size:  100%;
+  padding-bottom: 0px;
+  height:100vh;
+}
+#titleabout{
+  font-family:cursive;
+  font-weight: bolder;
+  animation: forwards;
+  font-size: 8vw;
+  color: white;
+}
+
+#boxabout{
+padding-top:30%;
+}
+
+#photous{
+  width: 50%;
+  height:100%;
+  
+}
+#textabout{
+  align-content: center;
+  font-family:rancho;
+  font-size: 3vw;
+  color:white;
+
+}
+
