@@ -23,12 +23,9 @@ Vite.init({
     capacity: {
         type: DataTypes.INTEGER,
     },
-<<<<<<< HEAD
-    imageURL: {
-        type: DataTypes.STRING
-    }
-=======
->>>>>>> dev
+    // imageURL: {
+    //     type: DataTypes.STRING
+    // }
 },{
     sequelize
 });
