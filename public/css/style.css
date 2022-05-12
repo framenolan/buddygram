@@ -30,7 +30,7 @@ nav {
   }
 
 /* App name and logo styling */
-.nav-wrapper h4 {
+.nav-wrapper h3 {
   font-family: 'Rancho', cursive;
   font-size: 50px;
   display: inline-block; 
@@ -40,6 +40,13 @@ nav {
 #nav-mobile li:hover {
   text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
   background-color: transparent !important;
+}
+
+#nav-mobile a {
+  font-size: 18px;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 
 /* sign up form */
@@ -68,8 +75,10 @@ nav {
     background-size:cover;
 }
 
-.slider h2, h5 {
+.slider h1, h4 {
   font-family: 'Rancho';
+  -webkit-text-stroke: 1px black;
+  
 }
 
 #img-1 {
@@ -86,9 +95,9 @@ nav {
 /* sign in form */
 .buddyForm{
   position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 10%;
+  transform: translate(-50px, -50px);
   z-index: 9999;
 }
 
