@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuddyGram</title>
+    {{!-- stylesheets and materialize --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {{!-- font and icons --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Architects+Daughter&family=Rancho&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+       
+</head>
+<body>
+    {{!--  nav-bar(s)--}}
+    <header>
+    <nav>
+        <div class="nav-wrapper">
+    {{!-- App name/logo here--}}
+        <h3>BuddyGram</h3>    
+        {{!-- <img src="" width="100" height="105"> --}}
+
+    {{!-- Nav bar links when a user is logged in --}}
+        {{#if loggedIn}}
+        <ul id="nav-mobile" class="right">
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/">Explore</a></li>
+        </ul>
+
+    {{!-- What a user will see in the nav if they are not logged in--}}
+        {{else}}
+        <ul id="nav-mobile" class="right">
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Sign Up</a></li>
+        <li> <a href="/aboutus">About Us</a></li>
+        </ul>
+        {{/if}}
+        </div>
+    </nav>
+    </header>
+
+    {{!-- page content --}}
+   {{{body}}}
+
+
+</body>
+</html>

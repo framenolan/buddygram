@@ -1,0 +1,27 @@
+[
+    {
+      "location": "Madison Park Beach",
+      "date": "2022-05-14",
+      "time": "20:00:00",
+      "details": "Hang out with me at the beach!",
+      "capacity": 10,
+      "userId": 1
+    },
+    {
+        "location": "Golden Gardens Beach",
+        "date": "2022-05-15",
+        "time": "20:00:00",
+        "details": "Hang out with me at this other beach!",
+        "capacity": 15,
+        "userId": 1
+    },
+    {
+        "location": "Poquitos",
+        "date": "2022-05-16",
+        "time": "20:00:00",
+        "details": "Grab some margs",
+        "capacity": 5,
+        "userId": 3
+    }
+]
+  

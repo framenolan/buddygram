@@ -1,0 +1,73 @@
+<h1>EXPLORER</h1>
+
+{{!-- {{#each this}}
+    <h3>{{location}}</h3>
+    <p>Date: {{date}}</p>
+    <p>Time: {{time}}</p>
+    <p>Details: {{details}}</p>
+    <p>Capacity: {{capacity}}</p>
+    <hr>
+{{/each}}  --}}
+
+<section id="cards_section" class="my-card_wrapper scrollspy">
+  <div class="container">
+    <div class="row">
+      {{#each this}}
+      {{#if this.id}}
+      {{!-- card 1 --}}
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            {{!-- <img src="{{viteImg}}" alt=""> --}}
+            <img src="https://picsum.photos/200?greyscale/1" alt="">
+            <span class="card-title">{{location}}</span>
+          </div>
+          <div class="card-content">
+            {{!-- date, time, details, capacity --}}
+            <p>Date: {{date}}</p>
+            <p>Time: {{time}}</p>
+            <p>Vite Details: {{details}}</p>
+            <p>Max Capacity: {{capacity}}</p>
+          </div>
+          <div class="card-action">
+            <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
+             <button class="light-blue-text text-darken-1 modal-trigger">View comments</button>
+          </div>
+        </div>
+      </div>
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+
+{{!-- <section id="cards_section" class="my-card_wrapper scrollspy">
+  <div class="container">
+    <div class="row">
+      {{#each this}}
+      {{#if this.id}}
+      {{log this.id}}
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{viteImg}}" alt="">
+            <img src="https://picsum.photos/200?greyscale/1" alt="">
+            <span class="card-title">{{location}}</span>
+          </div>
+          <div class="card-content">
+            <p>Date: {{date}}</p>
+            <p>Time: {{time}}</p>
+            <p>Vite Details: {{details}}</p>
+            <p>Max Capacity: {{capacity}}</p>
+          </div>
+          <div class="card-action">
+            <a href="#" class="light-blue-text text-darken-1 modal-trigger">This is a link</a>
+          </div>
+        </div>
+      </div>
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+</section> --}}

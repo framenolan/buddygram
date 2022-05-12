@@ -1,0 +1,166 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  main {
+    flex: 1 0 auto;
+  }
+  body {
+    background: #fff;
+  }
+  .input-field input[type=date]:focus + label,
+  .input-field input[type=text]:focus + label,
+  .input-field input[type=email]:focus + label,
+  .input-field input[type=password]:focus + label {
+    color: #E91E63;
+  }
+  .input-field input[type=date]:focus,
+  .input-field input[type=text]:focus,
+  .input-field input[type=email]:focus,
+  .input-field input[type=password]:focus {
+    border-bottom: 2px solid #E91E63;
+    box-shadow: none;
+  }
+
+nav {
+    background-color: black;
+    height: 110px;
+    display: inline-block;
+  }
+
+/* App name and logo styling */
+.nav-wrapper h3 {
+  font-family: 'Rancho', cursive;
+  font-size: 50px;
+  display: inline-block; 
+  margin: 2rem;
+}
+
+#nav-mobile li:hover {
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
+  background-color: transparent !important;
+}
+
+#nav-mobile a {
+  font-size: 18px;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+/* sign up form */
+#signup {
+  position: relative;
+  top: 50%;
+  left: 40%;
+}
+
+#signupheader {
+  text-align: center;
+  font-family: 'Rancho', cursive;
+}
+
+/* slider styling */
+  .slider{
+  height: 100vh;
+  }
+
+  .slides{
+    height:100%;
+  }
+  .slider .slides li img {
+    height: 100%;
+    width: 100%;
+    background-size:cover;
+}
+
+.slider h1, h4 {
+  font-family: 'Rancho';
+  -webkit-text-stroke: 1px black;
+  
+}
+
+#img-1 {
+  background-position: 0 20%;
+}
+#img-2 {
+  background-position: 0 20%;
+}
+
+#img-3 {
+  background-position: 0 75%;  
+}
+
+/* sign in form */
+.buddyForm{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50px, -50px);
+  z-index: 9999;
+}
+
+.section{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* profile */
+h1 {
+  font-family: 'Rancho', cursive;
+  padding: 10px;
+}
+
+.PostHeader {
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* media queries */
+@media screen and (max-width: 660px) {
+  body #nav-mobile.right {
+       float: none !important;
+   }
+   nav {
+       height: 92px;
+       line-height: 54px;
+   }
+   nav ul {
+       position: relative;
+       top: -40px;
+   }
+}
+
+.about{
+  background-image: url("https://d207ibygpg2z1x.cloudfront.net/image/upload/dpr_1,q_auto:eco/v1/articles_upload/main/ipvrtkw2lbymh5ibicvb");
+  background-size:cover;
+  padding-bottom: 0px;
+  height:100vh;
+}
+#titleabout{
+  font-family:cursive;
+  font-weight: bolder;
+  animation: forwards;
+  font-size: 8vw;
+  color: white;
+}
+
+#boxabout{
+padding-top:30%;
+}
+
+#photous{
+  width: 50%;
+  height:100%;
+  
+}
+#textabout{
+  align-content: center;
+  font-family:rancho;
+  font-size: 3vw;
+  color:white;
+
+}
+
