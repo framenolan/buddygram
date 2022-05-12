@@ -1,11 +1,47 @@
 <h1>EXPLORER</h1>
+<<<<<<< HEAD
+{{!-- {{#each this}}
+=======
 {{#each this}}
+>>>>>>> dev
     <h3>{{location}}</h3>
     <p>Date: {{date}}</p>
     <p>Time: {{time}}</p>
     <p>Details: {{details}}</p>
     <p>Capacity: {{capacity}}</p>
     <hr>
+{{/each}}  --}}
+<section id="cards_section" class="my-card_wrapper scrollspy">
+  <div class="container">
+    <div class="row">
+      {{#each this}}
+      {{!-- card 1 --}}
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            {{!-- <img src="{{viteImg}}" alt=""> --}}
+            <img src="https://picsum.photos/200?greyscale/1" alt="">
+            <span class="card-title">{{location}}</span>
+          </div>
+          <div class="card-content">
+            {{!-- date, time, details, capacity --}}
+            <p>Date: {{date}}</p>
+            <p>Time: {{time}}</p>
+            <p>Vite Details: {{details}}</p>
+            <p>Max Capacity: {{capacity}}</p>
+          </div>
+          <div class="card-action">
+            <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
+             <button class="light-blue-text text-darken-1 modal-trigger">View comments</button>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+        
+       
 {{/each}} 
 
 {{#each Vites}}
