@@ -135,7 +135,7 @@ h1 {
 
 .about{
   background-image: url("https://d207ibygpg2z1x.cloudfront.net/image/upload/dpr_1,q_auto:eco/v1/articles_upload/main/ipvrtkw2lbymh5ibicvb");
-  background-size:  100%;
+  background-size:cover;
   padding-bottom: 0px;
   height:100vh;
 }
