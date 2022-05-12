@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { User, Vite, Comment } = require('../models');
+const { Op } = require("sequelize")
 
 // Explore Vites
 router.get("/", (req, res) => {
@@ -8,13 +9,21 @@ router.get("/", (req, res) => {
         return res.redirect("/login")
     }
 
-    Vite.findAll()
+    Vite.findAll({
+        where: {
+            date: {
+                [Op.not]: null
+            }
+        }
+    })
         .then(allVites => {
-            console.log(allVites)
+            // console.log(allVites)
             const hbsVites = allVites.map(vite => vite.get({ plain: true }));
             // TODO: remove console logs
             hbsVites.loggedIn = req.session.user ? true : false;
-            console.log(hbsVites)
+            // console.log(hbsVites)
+            // console.log("========")
+            // console.log(hbsVites.length)
             res.render("explore", hbsVites)
         })
         .catch(err => {
