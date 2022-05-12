@@ -9,17 +9,20 @@
     <hr>
 {{/each}}  --}}
 
-<section id="cards_section" class="my-card_wrapper scrollspy">
+<section id="cards_section" class="my-card_wrapper">
   <div class="container">
     <div class="row">
       {{#each this}}
       {{#if this.id}}
       {{!-- card 1 --}}
-      <div class="col s12 m6 l4">
+      <div class="col s12 m6 l4 h-inherit">
         <div class="card">
           <div class="card-image">
-            {{!-- <img src="{{viteImg}}" alt=""> --}}
+            {{#if imageURL}}
+            <img src="{{imageURL}}" alt="" class="viteImg">
+            {{else}}
             <img src="https://picsum.photos/200?greyscale/1" alt="">
+            {{/if}}
             <span class="card-title">{{location}}</span>
           </div>
           <div class="card-content">

@@ -9,7 +9,7 @@ document.querySelector("#postVite").addEventListener("click",e=>{
         time:document.querySelector("#time").value,
         details:document.querySelector("#what").value,
         capacity:document.querySelector("#capacity").value,
-        imageURL:document.querySelector("#viteImg").getAttribute("src")
+        imageURL:document.querySelector("#newViteImg").getAttribute("src")
     }
 
     fetch("/api/vites/",{
@@ -35,15 +35,19 @@ var widget = cloudinary.createUploadWidget(
         sources: ['local', 'url', 'camera', 'image_search',
             'facebook', 'dropbox', 'google_photos'],
         //google_api_key: ''.....'' 
-},
+    },
     (error, result) => {
         if (!error && result && result.event === "success") {
             console.log("Done! Here is the image info: ", result.info);
-            document.getElementById("viteImg").setAttribute("src",result.info.url)
-        imageURL = result.info.secure_url};
-    })
+            document.getElementById("newViteImg").setAttribute("src",result.info.url)
+            imageURL = result.info.url
+        } else {
+            console.log("error posting img")
+        }
+    }
+);
 
-    document.querySelector("#vitePhoto").addEventListener("click", e => {
-        e.preventDefault()
-        widget.open()
-    });
+document.querySelector("#vitePhoto").addEventListener("click", e => {
+    e.preventDefault()
+    widget.open()
+});
