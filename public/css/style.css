@@ -25,14 +25,21 @@ body {
 
   nav {
     background-color: black;
+    height: 120px;
+    display: inline-block;
   }
 
 /* App name and logo styling */
 .nav-wrapper h4 {
   font-family: 'Rancho', cursive;
   font-size: 50px;
-  display: inline;
-  margin: 1rem;
+  display: inline; 
+  /* margin: 1rem; */
+}
+
+#nav-mobile li:hover {
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
+  background-color: transparent !important;
 }
 
 /* sign up form */
