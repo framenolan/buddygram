@@ -106,6 +106,17 @@ nav {
   padding-bottom: 0;
 }
 
+/* profile */
+h1 {
+  font-family: 'Rancho', cursive;
+  padding: 10px;
+}
+
+.PostHeader {
+  text-align: center;
+  padding: 10px;
+}
+
 
 /* media queries */
 @media screen and (max-width: 660px) {
