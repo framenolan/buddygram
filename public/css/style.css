@@ -83,13 +83,16 @@ height: 100vh;
 
 #img-1 {
   background-position: 0 20%;
+  opacity: 0.5;
 }
 #img-2 {
   background-position: 0 20%;
+  opacity: 0.5;
 }
 
 #img-3 {
   background-position: 0 75%;  
+  opacity: 0.5;
 }
 
 /* sign in form */
