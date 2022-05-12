@@ -28,7 +28,6 @@ document.querySelector("#postVite").addEventListener("click",e=>{
     
 })
 
-<<<<<<< HEAD
 var widget = cloudinary.createUploadWidget(
     {
         cloud_name: 'buddygram',
@@ -48,6 +47,3 @@ var widget = cloudinary.createUploadWidget(
         e.preventDefault()
         widget.open()
     });
-=======
-
->>>>>>> dev
