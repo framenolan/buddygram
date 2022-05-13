@@ -1,4 +1,4 @@
-<h1>EXPLORER</h1>
+<div class="exploreHeader"><h1>EXPLORE</h1></div>
 <section id="cards_section" class="my-card_wrapper">
   <div class="container">
     <div class="row">
@@ -21,8 +21,11 @@
             <p>Max Capacity: {{capacity}}</p>
           </div>
           <div class="card-action">
-            <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
-             <button class="light-blue-text text-darken-1 modal-trigger">View comments</button>
+            {{!-- <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
+             <button class="light-blue-text text-darken-1 modal-trigger">View comments</button> --}}
+            <button id="addComment" class=" btn black waves-effect waves-light modal-trigger">Add a Comment</button>
+             <button id="viewComments" class="btn black waves-effect waves-light modal-trigger">View Comments</button>
+
           </div>
         </div>
       </div>

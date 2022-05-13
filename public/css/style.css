@@ -23,13 +23,14 @@ body {
   box-shadow: none;
 }
 
-nav {
-    background-color: black;
-    height: 110px;
-    display: inline-block;
-  }
+/* ===NAV BAR- App name and logo styling=== */
 
-/* App name and logo styling */
+nav {
+  background-color: black;
+  height: 110px;
+  display: inline-block;
+}
+
 .nav-wrapper h3 {
   font-family: 'Rancho', cursive;
   font-size: 50px;
@@ -49,11 +50,24 @@ nav {
   margin-right: 10px;
 }
 
-/* sign up form */
+/* ===SIGN UP PAGE=== */
 #signup {
   position: relative;
   top: 50%;
   left: 40%;
+}
+
+.input-field>label {
+  font-size: 20px;
+}
+
+#btnSignup {
+  width: 100%;
+}
+
+#btnSignup:hover {
+  font-size: 18px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
 }
 
 #signupheader {
@@ -61,7 +75,11 @@ nav {
   font-family: 'Rancho', cursive;
 }
 
-/* slider styling */
+.input-field {
+  margin: 0px;
+}
+
+/* ===LOGIN SLIDER=== */
 .slider{
 height: 100vh;
 }
@@ -75,24 +93,26 @@ height: 100vh;
   background-size:cover;
 }
 
-.slider h1, h4 {
+.slider h1, h3, h4, h5 {
   font-family: 'Rancho';
   -webkit-text-stroke: 1px black;
-  
 }
 
 #img-1 {
   background-position: 0 20%;
+  opacity: 0.5;
 }
 #img-2 {
   background-position: 0 20%;
+  opacity: 0.5;
 }
 
 #img-3 {
   background-position: 0 75%;  
+  opacity: 0.5;
 }
 
-/* sign in form */
+/* ===LOG IN PAGE=== */
 .buddyForm{
   position: absolute;
   top: 30%;
@@ -106,12 +126,54 @@ height: 100vh;
   padding-bottom: 0;
 }
 
+.signin-text {
+  font-size: 40px;
+  color: black;
+}
+
+.caption {
+  padding: 10px;
+  margin: 0px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 3px black;
+}
+
+#btnLogin {
+  width: 100%;
+  align-items: center;
+  margin: 5px;
+}
+
+#createacct {
+  width: 100%;
+  margin: 5px;
+  align-items: center;
+}
+
+#createacct:hover {
+  font-size: 18px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
+}
+
+#btnLogin:hover {
+  font-size: 18px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
+}
+
 /* set card height to match row height --- TODO: not working yet */
 .h-inherit {
   min-height: inherit;
 }
 
-/* profile */
+/* ===PROFILE PAGE===*/
+.welcomeUser {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 3px black;
+}
+
 h1 {
   font-family: 'Rancho', cursive;
   padding: 10px;
@@ -119,7 +181,10 @@ h1 {
 
 .PostHeader {
   text-align: center;
-  padding: 10px;
+  /* padding: 10px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 3px black; */
 }
 
 .thumbnail {
@@ -141,6 +206,55 @@ h1 {
   width: 100%;
 }
 
+/* ===post a vite cards===*/
+#vitePhoto, #postVite {
+  width: 100%;
+  margin: 5px;
+  align-items: center;
+}
+
+#vitePhoto:hover, #postVite:hover {
+  font-size: 18px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
+}
+
+/* ===upcoming vites cards=== */
+#deleteVite, #addCmmt, #viewCmmts {
+  width: 100%;
+  margin: 5px;
+  align-items: center;
+}
+
+#deleteVite:hover, #addCmmt:hover, #viewCmmts:hover {
+  font-size: 18px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
+}
+
+/* ===EXPLORE PAGE=== */
+
+.exploreHeader {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 3px black;
+}
+
+#addComment, #viewComments {
+  width: 100%;
+  margin: 5px;
+}
+
+#addComment:hover, #viewComments:hover {
+  font-size: 18px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
+}
+
+
+/*  EXPLORE CARD ADJUSTMENTS WITH MEDIA QUERIES */
+/* .row .col {
+  padding: 10px;
+} */
+
 /* media queries */
 @media screen and (max-width: 660px) {
   body #nav-mobile.right {
@@ -156,6 +270,14 @@ h1 {
    }
 }
 
+@media screen and (min-width: 993px) {
+  .row .col {
+    width: 33.333333%;
+    margin-left: auto;
+  }
+}
+
+/* ABOUT US PAGE */
 .about{
   background-image: url("https://d207ibygpg2z1x.cloudfront.net/image/upload/dpr_1,q_auto:eco/v1/articles_upload/main/ipvrtkw2lbymh5ibicvb");
   background-size:cover;
