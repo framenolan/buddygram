@@ -1,51 +1,52 @@
-<h1>Your Vites {{username}}</h1>
+<div class="welcomeUser">
+<h1>Welcome back, {{firstname}}!</h1></div>
   <div class="container newVite">
     <div class="row">
       <div class="col s12 m7">
         <div class="card-panel">
           <div class="PostHeader">
           <h3><strong>Post a New Vite:</strong></h3>
-          <img src="https://i.gifer.com/Bvg.gif"  width="300" height="250"/></div>
+          <img src="https://i.gifer.com/Bvg.gif" class="circle responsive-img" width="300" height="250"/></div>
           <form>
             {{!-- What? --}}
             <div class="row">
               <div class="input-field col s12">
-                <input id="what" type="text" class="validate" placeholder="WHAT?">
+                <input id="what" type="text" class="validate" placeholder="">
                 <label for="what">What?</label>
               </div>
             </div>
             {{!-- Where? --}}
             <div class="row">
               <div class="input-field col s12">
-                <input id="place" type="text" class="validate" placeholder="WHERE?">
+                <input id="place" type="text" class="validate" placeholder="">
                 <label for="place">Where?</label>
               </div>
             </div>
             {{!-- Date --}}
             <div class="row">
               <div class="input-field col s12">
-                <input id="date" type="date" class="validate" placeholder="DATE?">
+                <input id="date" type="date" class="validate" placeholder="">
                 <label for="date">Date</label>
               </div>
             </div>
             {{!-- Time --}}
             <div class="row">
               <div class="input-field col s12">
-                <input id="time" type="time" class="validate" placeholder="TIME?">
+                <input id="time" type="time" class="validate" placeholder="">
                 <label for="time">Time</label>
               </div>
             </div>
             {{!-- How Many People? --}}
             <div class="row">
               <div class="input-field col s12">
-                <input id="capacity" type="text" class="validate" placeholder="HOW MANY PEOPLE?">
+                <input id="capacity" type="text" class="validate" placeholder="">
                 <label for="capacity">How Many People?</label>
               </div>
             </div>
             <div class="row">
               <div class="col s12 right-align">
-                <button data-target="modal1" id="vitePhoto" class="btn blue-grey waves-effect waves-light modal-trigger">Upload Your Vite Photo<i class="material-icons right"></i></button>
-                <button data-target="modal1" id="postVite" class="btn blue-grey waves-effect waves-light modal-trigger">Post!<i class="material-icons right"></i></button>
+                <button data-target="modal1" id="vitePhoto" class="btn black waves-effect waves-light modal-trigger">Upload Your Vite Photo<i class="material-icons right"></i></button>
+                <button data-target="modal1" id="postVite" class="btn black waves-effect waves-light modal-trigger">Post!<i class="material-icons right"></i></button>
                 <img src="" id="newViteImg" class="thumbnail">
               </div>
             </div>
@@ -71,8 +72,13 @@
           <p>Max Capacity: {{capacity}}</p>
         </div>
         <div class="card-action">
-          <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
-          <button class="light-blue-text text-darken-1 modal-trigger">View comments</button>
+          {{!-- <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
+          <button class="light-blue-text text-darken-1 modal-trigger">View comments</button> --}}
+
+          <button id="addCmmt" class="btn black waves-effect waves-light modal-trigger">Add a Comment</button>
+          <button id ="viewCmmts" class="btn black waves-effect waves-light modal-trigger">View Comments</button>
+             <button id="deleteVite" class="btn black waves-effect waves-light modal-trigger">Delete Vite</button>
+
         </div>
       </div>
       {{else}}
@@ -85,8 +91,12 @@
           <p>Max Capacity: {{capacity}}</p>
         </div>
         <div class="card-action">
-          <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
-          <button class="light-blue-text text-darken-1 modal-trigger">View comments</button>
+          {{!-- <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
+          <button class="light-blue-text text-darken-1 modal-trigger">View comments</button> --}}
+
+          <button id="addCmmt" class="btn black waves-effect waves-light modal-trigger">Add a Comment</button>
+          <button id ="viewCmmts" class="btn black waves-effect waves-light modal-trigger">View Comments</button>
+          <button id="deleteVite" class="btn black waves-effect waves-light modal-trigger">Delete Vite</button>
         </div>
       </div>
       {{/if}}
