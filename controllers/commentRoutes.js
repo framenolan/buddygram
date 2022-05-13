@@ -34,15 +34,17 @@ router.post("/", (req, res) => {
     return res.status(401).json({ msg: "Please login to view" })
     // maybe add a redirect to login, or switch
   }
-
+  
+  // let commenter = req.session.user.firstname.concat(req.session.user.lastname)
+  
   Comment.create({
-    location: req.body.location,
-    time: req.body.time,
-    details: req.body.details,
-    capacity: req.body.capacity
+    body: req.body.body,
+    ViteId: req.body.ViteId,
+    commenter: req.session.user.firstname
   })
     .then(newComment => {
       res.json(newComment)
+      console.log(newComment)
     })
     .catch(err => {
       console.log(err);

@@ -43,6 +43,7 @@
                 <label for="capacity">How Many People?</label>
               </div>
             </div>
+
             <div class="row">
               <div class="col s12 right-align">
                 <button data-target="modal1" id="vitePhoto" class="btn black waves-effect waves-light modal-trigger">Upload Your Vite Photo<i class="material-icons right"></i></button>
@@ -71,13 +72,29 @@
           <p>Vite Details: {{details}}</p>
           <p>Max Capacity: {{capacity}}</p>
         </div>
+        <form>
+          <div class="row hidden card-comment" id="commentInput{{id}}">
+            <div class="input-field col s12">
+              <input id="addAComment{{id}}" type="text" class="validate" placeholder="">
+              <label for="addAComment{{id}}">Add A Comment</label>
+              <button id="btnAddComment{{id}}" value="{{id}}" class="btn black waves-effect waves-light modal-trigger submitComment">Submit</button>
+            </div>
+          </div>
+        </form>
+        <div class="card-comments" id="commentBlock{{id}}">
+          <ol>
+          {{#each Comments}}
+            <li>"{{body}}"</li>
+          {{/each}}
+          </ol>
+        </div>
         <div class="card-action">
           {{!-- <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
           <button class="light-blue-text text-darken-1 modal-trigger">View comments</button> --}}
 
-          <button id="addCmmt" class="btn black waves-effect waves-light modal-trigger">Add a Comment</button>
-          <button id ="viewCmmts" class="btn black waves-effect waves-light modal-trigger">View Comments</button>
-             <button id="deleteVite" class="btn black waves-effect waves-light modal-trigger">Delete Vite</button>
+          <button id="addComment{{id}}" value="{{id}}" class="btn black waves-effect waves-light modal-trigger addComment">Add a Comment</button>
+          <button id ="viewComment{{id}}" value="{{id}}" class="btn black waves-effect waves-light modal-trigger viewComment">View Comments</button>
+          <button id="deleteVite{{id}}" value="{{id}}" class="btn black waves-effect waves-light modal-trigger deleteVite">Delete Vite</button>
 
         </div>
       </div>
@@ -90,13 +107,29 @@
           <p>Vite Details: {{details}}</p>
           <p>Max Capacity: {{capacity}}</p>
         </div>
+        <form>
+          <div class="row hidden card-comment" id="commentInput{{id}}">
+            <div class="input-field col s12">
+              <input id="addAComment{{id}}" type="text" class="validate" placeholder="">
+              <label for="addAComment{{id}}">Add A Comment</label>
+              <button id="btnAddComment{{id}}" value="{{id}}" class="btn black waves-effect waves-light modal-trigger submitComment">Submit</button>
+            </div>
+          </div>
+        </form>
+        <div class="card-comments hidden" id="commentBlock{{id}}">
+          <ol>
+          {{#each Comments}}
+            <li>"{{body}}"</li>
+          {{/each}}
+          </ol>
+        </div>
         <div class="card-action">
           {{!-- <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
           <button class="light-blue-text text-darken-1 modal-trigger">View comments</button> --}}
 
-          <button id="addCmmt" class="btn black waves-effect waves-light modal-trigger">Add a Comment</button>
-          <button id ="viewCmmts" class="btn black waves-effect waves-light modal-trigger">View Comments</button>
-          <button id="deleteVite" class="btn black waves-effect waves-light modal-trigger">Delete Vite</button>
+          <button id="addComment{{id}}" value="{{id}}" class="btn black waves-effect waves-light modal-trigger addComment">Add a Comment</button>
+          <button id ="viewComment{{id}}" value="{{id}}" class="btn black waves-effect waves-light modal-trigger viewComment">View Comments</button>
+          <button id="deleteVite{{id}}" value="{{id}}" class="btn black waves-effect waves-light modal-trigger deleteVite">Delete Vite</button>
         </div>
       </div>
       {{/if}}
@@ -105,4 +138,5 @@
 
 <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript">  
 </script>
+<script src="/js/comment.js"></script>
 <script src="/js/profile.js"></script>

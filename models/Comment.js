@@ -7,6 +7,11 @@ Comment.init({
     body: {
         type:DataTypes.TEXT,
         allowNull:false
+    },
+    commenter: {
+        type:DataTypes.STRING,
+        allowNull:false,
+        defaultValue:"unknown"
     }
 },{
     sequelize
