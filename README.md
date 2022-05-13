@@ -5,6 +5,11 @@ Buddygram is the latest social app for you to get to know new people. Perfect fo
 Buddygram works via "vites" invitations that will posted by the host, to parties, dinner parties, or simply a get together with friends. Clients will be able to post, add a comment and upload a picture to share their experience.
 For safety reasons it is essential that users register themselves in the app to be able to see the upcoming "vites" and rsvp them.
 
+## USER STORY
+AS A new person in town
+I WANT to get to know new people in the area, enjoy new hobbies and adventures, and share new memories with them
+THEN I feel like home!
+
 ## Usage
 
 * To use the app,first visit our site! .  
