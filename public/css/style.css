@@ -208,6 +208,9 @@ h1 {
 
 .exploreHeader {
   text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 3px black;
 }
 
 #addComment, #viewComments {
