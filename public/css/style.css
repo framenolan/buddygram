@@ -23,13 +23,14 @@ body {
   box-shadow: none;
 }
 
-nav {
-    background-color: black;
-    height: 110px;
-    display: inline-block;
-  }
+/* ===NAV BAR- App name and logo styling=== */
 
-/* NAV - App name and logo styling */
+nav {
+  background-color: black;
+  height: 110px;
+  display: inline-block;
+}
+
 .nav-wrapper h3 {
   font-family: 'Rancho', cursive;
   font-size: 50px;
@@ -49,7 +50,7 @@ nav {
   margin-right: 10px;
 }
 
-/* sign up form */
+/* ===SIGN UP PAGE=== */
 #signup {
   position: relative;
   top: 50%;
@@ -77,8 +78,7 @@ nav {
   margin: 0px;
 }
 
-
-/* slider styling */
+/* ===LOGIN SLIDER=== */
 .slider{
 height: 100vh;
 }
@@ -111,7 +111,7 @@ height: 100vh;
   opacity: 0.5;
 }
 
-/* sign in form */
+/* ===LOG IN PAGE=== */
 .buddyForm{
   position: absolute;
   top: 30%;
@@ -138,6 +138,12 @@ height: 100vh;
   text-shadow: 3px 3px 3px black;
 }
 
+#btnLogin {
+  width: 100%;
+  align-items: center;
+  margin: 5px;
+}
+
 #createacct {
   width: 100%;
   margin: 5px;
@@ -146,16 +152,12 @@ height: 100vh;
 
 #createacct:hover {
   font-size: 18px;
-}
-
-#btnLogin {
-  width: 100%;
-  align-items: center;
-  margin: 5px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
 }
 
 #btnLogin:hover {
   font-size: 18px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
 }
 
 /* set card height to match row height --- TODO: not working yet */
@@ -163,7 +165,7 @@ height: 100vh;
   min-height: inherit;
 }
 
-/* profile */
+/* ===PROFILE PAGE===*/
 .welcomeUser {
   text-align: center;
   color: white;
@@ -223,7 +225,7 @@ h1 {
   font-size: 18px;
 }
 
-/* Explore */
+/* ===EXPLORE PAGE=== */
 
 .exploreHeader {
   text-align: center;
@@ -256,6 +258,7 @@ h1 {
    }
 }
 
+/* ABOUT US PAGE */
 .about{
   background-image: url("https://d207ibygpg2z1x.cloudfront.net/image/upload/dpr_1,q_auto:eco/v1/articles_upload/main/ipvrtkw2lbymh5ibicvb");
   background-size:cover;
