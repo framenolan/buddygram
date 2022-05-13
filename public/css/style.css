@@ -197,6 +197,30 @@ h1 {
   font-size: 18px;
 }
 
+/* Explore */
+
+.exploreHeader {
+  text-align: center;
+}
+
+#addComment {
+  width: 100%;
+  margin: 5px;
+}
+
+#viewComments {
+  width: 100%;
+  margin: 5px;
+}
+
+#addComment:hover {
+  font-size: 18px;
+}
+
+#viewComments:hover {
+  font-size: 18px;
+}
+
 /* media queries */
 @media screen and (max-width: 660px) {
   body #nav-mobile.right {
