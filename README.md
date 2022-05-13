@@ -47,5 +47,5 @@ Click on the link below to find the link to our app!
 * [Daniela Velarde](https://www.linkedin.com/in/daniela-velarde-8baa13141/)
 * [Nolan Frame](https://www.linkedin.com/in/framenolan/)
 * [Kristina Pang](https://www.linkedin.com/in/kvpang/)
-* [Sukh Gill]()
+* [Sukh Gill](www.linkedin.com/in/gillsukhminder)
 
