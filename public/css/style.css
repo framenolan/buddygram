@@ -147,6 +147,9 @@ height: 100vh;
 /* profile */
 .welcomeUser {
   text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 3px black;
 }
 
 h1 {
@@ -156,7 +159,10 @@ h1 {
 
 .PostHeader {
   text-align: center;
-  padding: 10px;
+  /* padding: 10px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 3px black; */
 }
 
 .thumbnail {
@@ -178,22 +184,23 @@ h1 {
   width: 100%;
 }
 
-#vitePhoto {
+#vitePhoto, #postVite {
   width: 100%;
   margin: 5px;
   align-items: center;
 }
 
-#postVite {
-  width: 100%;
-  margin: 5px;
-}
-
-#vitePhoto:hover {
+#vitePhoto:hover, #postVite:hover {
   font-size: 18px;
 }
 
-#postVite:hover {
+#deleteVite, #addCmmt, #viewCmmts {
+  width: 100%;
+  margin: 5px;
+  align-items: center;
+}
+
+#deleteVite:hover, #addCmmt:hover, #viewCmmts:hover {
   font-size: 18px;
 }
 
@@ -203,21 +210,12 @@ h1 {
   text-align: center;
 }
 
-#addComment {
+#addComment, #viewComments {
   width: 100%;
   margin: 5px;
 }
 
-#viewComments {
-  width: 100%;
-  margin: 5px;
-}
-
-#addComment:hover {
-  font-size: 18px;
-}
-
-#viewComments:hover {
+#addComment:hover, #viewComments:hover {
   font-size: 18px;
 }
 
