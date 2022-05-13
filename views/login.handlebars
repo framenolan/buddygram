@@ -1,12 +1,3 @@
-{{!-- sign in, username, pw, login OR create an account/signup --}}
-{{!-- <div class="section"></div> --}}
-{{!-- <main>  --}}
-{{!-- <center class="buddyForm"> --}}
-{{!-- place logo / app name here --}}
-{{!-- <img class="responsive-img" style="width: 250px;" src="https://i.gifer.com/Bvg.gif" /> --}}
-{{!-- <h5>BuddyGram</h5> --}}
-{{!-- <div class="section"></div> --}}
-{{!-- <h5 class="indigo-text">Sign In to Your Account</h5> --}}
 <div class="section"></div>
 <div class="container">
     <center class="buddyForm">
@@ -16,74 +7,63 @@
                     <h5 class="signin-text">Sign In to Your Account</h5>
                     <div class='col s12'></div>
                 </div>
-                {{!-- enter email --}}
                 <div class='row'>
                     <div class='input-field col s12'>
-                        <input class='validate' type='email' name='email' id='email' placeholder="Enter Your Email"/>
+                        <input class='validate' type='email' name='email' id='email' placeholder="Enter Your Email" />
                         <label for='email'></label>
                     </div>
                 </div>
-                {{!-- enter password --}}
                 <div class='row'>
                     <div class='input-field col s12'>
-                        <input class='validate' type='password' name='password' id='password' placeholder="Enter your password"/>
+                        <input class='validate' type='password' name='password' id='password'
+                            placeholder="Enter your password" />
                         <label for='password'></label>
                     </div>
-                    {{!-- forgot password link --}}
                     <label style='float: right;'>
                         <a class='red-text' href='#!'>
                             <b>Forgot Password?</b>
                         </a>
                     </label>
                 </div>
-                <br/>
-                {{!-- login button --}}
-                {{!-- <center> --}}
-                    <div class='row'>
-                        {{!-- <button type='submit' name='btn_login' id='btnLogin' class='col s12 btn btn-large waves-effect indigo'>Login</button> --}}
-                        <button type='submit' name='btn_login' id='btnLogin' class='col s12 btn black waves-effect waves-light modal-trigger'>Login</button>
-                    
-                    {{!-- <a href="/signup" class="createacct">Create Account</a> --}}
-                    <a role="button" type='submit' href="/signup" id='createacct' class='col s12 btn black waves-effect waves-light modal-trigger'>Create Account</a>
-                    </div>
-                {{!-- </center> --}}
+                <br />
+                <div class='row'>
+                    <button type='submit' name='btn_login' id='btnLogin'
+                        class='col s12 btn black waves-effect waves-light modal-trigger'>Login</button>
+
+                    <a role="button" type='submit' href="/signup" id='createacct'
+                        class='col s12 btn black waves-effect waves-light modal-trigger'>Create Account</a>
+                </div>
             </form>
         </div>
-    </div>
+</div>
 </center>
 
 <section class="slider">
     <ul class="slides">
         <li>
-            <img src="https://images.unsplash.com/photo-1621112904887-419379ce6824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" alt="party">
+            <img src="https://images.unsplash.com/photo-1621112904887-419379ce6824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
+                alt="party">
             <div class="caption right-align">
                 <h1>NEW IN TOWN?</h1>
                 <h4>
                     <strong>MAKE NEW FRIENDS!</strong>
                 </h4>
-                {{!-- <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-            </h5> --}}
-
             </div>
         </li>
         <li>
-            <img id="img-2" src="https://images.unsplash.com/photo-1576867757603-05b134ebc379?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
+            <img id="img-2"
+                src="https://images.unsplash.com/photo-1576867757603-05b134ebc379?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
             <div class="caption right-align">
                 <h1>LOVE TO COOK?</h1>
                 <h4>MEET NEW PEOPLE BY SHARING YOUR FOOD!</h4>
-                {{!-- <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-              MEET NEW PEOPLE BY SHARING YOUR FOOD! 
-            </h5> --}}
             </div>
         </li>
         <li>
-            <img id="img-3" src="https://images.unsplash.com/photo-1575037614876-c38a4d44f5b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"/>
+            <img id="img-3"
+                src="https://images.unsplash.com/photo-1575037614876-c38a4d44f5b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" />
             <div class="caption right-align">
                 <h1>HOST PARTIES</h1>
                 <h4>CREATE NEW MEMORABLE MOMENTS!</h4>
-                {{!-- <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-            </h5> --}}
-
             </div>
         </li>
     </ul>

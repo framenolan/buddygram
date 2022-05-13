@@ -11,8 +11,6 @@ document.querySelector("#btnSignup").addEventListener("click",e=>{
         email:document.querySelector("#email").value,
         password:document.querySelector("#password").value
     }
-
-    console.log(userObj)
     
     fetch("/api/users",{
         method:"POST",
@@ -25,11 +23,6 @@ document.querySelector("#btnSignup").addEventListener("click",e=>{
             location.href="/profile"
         } else {
             res.json().then(function (errData) {
-                // TODO: remove from final
-                console.log(res.statusText)
-                console.log(errData)
-                console.log(errData.err.errors[0].path)
-
                 switch (errData.err.errors[0].message) {
                     case 'Validation isEmail on email failed':
                         alert("Incorrect Email Format")

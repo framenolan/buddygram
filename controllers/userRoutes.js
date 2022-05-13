@@ -47,7 +47,6 @@ router.post("/", (req, res) => {
     })
     .catch(err => {
       console.log(err);
-      // alert("An error occurred\n", err);
       res.status(500).json({ msg: "an error occured", err });
     });
 });
@@ -59,27 +58,19 @@ router.post("/login", (req, res) => {
       email: req.body.email
     }
   }).then(foundUser => {
-    // TODO: Remove later
-    console.log("uR 62")
-    console.log(foundUser)
     if (!foundUser) {
-      console.log("uR 65")
       return res.status(400).json({ msg: "Incorrect Email or Password" })
     }
     if (bcrypt.compareSync(req.body.password, foundUser.password)) {
-      console.log("uR 69")
       req.session.user = {
         id: foundUser.id,
         email: foundUser.email
       }
       return res.json(foundUser)
     } else {
-      console.log("uR 76")
       return res.status(400).json({ msg: "Incorrect Email or Password" })
     }
   }).catch(err => {
-    console.log("uR 80")
-    // alert("An error occurred\n", err);
     res.status(500).json({ msg: "an error occured", err });
   });
 });

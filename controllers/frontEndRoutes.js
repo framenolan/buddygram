@@ -10,6 +10,7 @@ router.get("/", (req, res) => {
     }
 
     Vite.findAll({
+        include:[Comment],
         where: {
             date: {
                 [Op.not]: null
@@ -66,18 +67,17 @@ router.get("/profile", (req, res) => {
     }
     
     User.findByPk(req.session.user.id, {
-        include: [Vite]
+        include: [{model:Vite, include: [Comment]}]
     }).then(userData => {
         console.log(userData)
         const hbsData = userData.get({ plain: true })
         hbsData.loggedIn = req.session.user ? true : false
-        console.log(hbsData)
         res.render("profile", hbsData)
     }).catch(err => {
         console.log(err);
         res.status(500).json({ msg: "an error occured", err });
-    });
-})
+    })
+});
 
-
+    
 module.exports = router;
