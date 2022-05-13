@@ -67,6 +67,7 @@ nav {
 
 #btnSignup:hover {
   font-size: 18px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
 }
 
 #signupheader {
@@ -245,7 +246,14 @@ h1 {
 
 #addComment:hover, #viewComments:hover {
   font-size: 18px;
+  text-shadow: 0 0 8px #2341e7, 0 0 6px #2341e7, 0 0 9px #2341e7;
 }
+
+
+/*  EXPLORE CARD ADJUSTMENTS WITH MEDIA QUERIES */
+/* .row .col {
+  padding: 10px;
+} */
 
 /* media queries */
 @media screen and (max-width: 660px) {
@@ -260,6 +268,13 @@ h1 {
        position: relative;
        top: -40px;
    }
+}
+
+@media screen and (min-width: 993px) {
+  .row .col {
+    width: 33.333333%;
+    margin-left: auto;
+  }
 }
 
 /* ABOUT US PAGE */
