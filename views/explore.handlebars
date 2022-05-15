@@ -1,11 +1,11 @@
-<h1>EXPLORER</h1>
+<div class="exploreHeader"><h1>EXPLORE</h1></div>
 <section id="cards_section" class="my-card_wrapper">
   <div class="container">
     <div class="row">
       {{#each this}}
       {{#if this.id}}
-      <div class="col s12 m6 l4 h-inherit">
-        <div class="card">
+      <div class="col s12 m6 l4">
+        <div class="card exploreCard">
           <div class="card-image">
             {{#if imageURL}}
             <img src="{{imageURL}}" alt="" class="viteImg">
@@ -20,9 +20,25 @@
             <p>Vite Details: {{details}}</p>
             <p>Max Capacity: {{capacity}}</p>
           </div>
+        <form>
+          <div class="row hidden card-comment" id="commentInput{{this.id}}">
+            <div class="input-field col s12">
+              <input id="addAComment{{this.id}}" type="text" class="validate" placeholder="">
+              <label for="addAComment{{this.id}}">Add A Comment</label>
+              <button id="btnAddComment{{this.id}}" value="{{this.id}}" class="btn black waves-effect waves-light modal-trigger submitComment">Submit</button>
+            </div>
+          </div>
+        </form>
+        <div class="card-comments hidden" id="commentBlock{{this.id}}">
+          <ol>
+          {{#each this.Comments}}
+            <li>"{{body}}"</li>
+          {{/each}}
+          </ol>
+        </div>
           <div class="card-action">
-            <button class="light-blue-text text-darken-1 modal-trigger">Add a comment</button>
-             <button class="light-blue-text text-darken-1 modal-trigger">View comments</button>
+            <button id="addComment{{id}}" value="{{id}}" class="btn pb-1 black waves-effect waves-light modal-trigger addComment">Add a Comment</button>
+            <button id ="viewComment{{id}}" value="{{id}}" class="btn black waves-effect waves-light modal-trigger viewComment">View Comments</button>
           </div>
         </div>
       </div>
@@ -31,3 +47,5 @@
     </div>
   </div>
 </section>
+
+<script src="/js/comment.js"></script>
