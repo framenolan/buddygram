@@ -262,7 +262,9 @@ h1 {
   display: none;
 }
 
-/* media queries */
+
+/* 
+media queries */ 
 @media screen and (max-width: 300px) {
   body #nav-mobile.right {
        float: none !important;
@@ -321,5 +323,5 @@ h1 {
     font-family: 'Rancho';
     font-size: 30px;
   }
-
- 
+  
+  
